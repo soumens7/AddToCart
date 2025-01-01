@@ -1,0 +1,40 @@
+section {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: rows;
+}
+
+.cards {
+  width: 250px;
+  padding: 20px;
+}
+
+.cards:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.image_box img{
+    width: 150px;
+    height: 200px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.details button {
+  background-color: #e2dcdd;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+.details button:hover {
+  background-color:orange;
+}
+
