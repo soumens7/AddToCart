@@ -35,6 +35,7 @@ export default function App() {
       }
       
       {warning && <div className="warning">Item is already in the cart</div>}
+      
     </div>
   );
 }

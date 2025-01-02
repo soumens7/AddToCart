@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/card.css";
-
+// product card
 export default function Card({ item, handleClick }) {
   const { title, author, price, img } = item;
   return (
@@ -18,4 +18,3 @@ export default function Card({ item, handleClick }) {
     </div>
   );
 }
-

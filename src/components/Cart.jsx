@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+// to show items in cart
 export default function Cart({ cart, setCart }) {
   const [price, setPrice] = useState(0);
   return (
@@ -22,5 +22,4 @@ export default function Cart({ cart, setCart }) {
       ))}
     </div>
   );
-  
 }
