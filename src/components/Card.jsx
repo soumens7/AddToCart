@@ -6,14 +6,22 @@ export default function Card({ item, handleClick }) {
   return (
     <div className="cards">
       <div className="image_box">
-        <img src={img} alt={item.alt || "Image"} />
-        {/* <img src={item.img}/> */}
+        <img
+          src={img}
+          alt={item.alt || "Product Image"}
+          onError={(e) => (e.target.src = "fallback-image.jpg")}
+        />
       </div>
       <div className="details">
         <p>{title}</p>
         <p>{author}</p>
         <p>Price- ₹{price}</p>
-        <button onClick={() => handleClick(item)}>Add to Cart</button>
+        <button
+          onClick={() => handleClick(item)}
+          aria-label={`Add ${title} to cart`}
+        >
+          Add to Cart
+        </button>
       </div>
     </div>
   );
