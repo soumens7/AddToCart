@@ -27,7 +27,7 @@ export default function App() {
   };
 
   return (
-    <div>
+    <div className="container">
       <Navbar size={cart.length} setShow={setShow}/>
       {
         show ? <Shop handleClick={handleClick} /> : 
